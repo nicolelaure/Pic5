@@ -64,6 +64,11 @@ if ( typeof(jQuery) != 'undefined' ){
                     context.closePath();
                     context.stroke();
                 }
+                sendDrawing();
+            }
+            function sendDrawing(){
+            	var string = canvas.toDataURL("image/jpeg");
+				console.log(string.length);
             }
         }
     });
