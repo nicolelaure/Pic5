@@ -4,7 +4,7 @@ if ( typeof(jQuery) != 'undefined' ){
         if (canvas.getContext('2d')) {
             var context = canvas.getContext('2d');
        
-        
+            //POTENTIAL IE SUPPORT
             //        var canvasDiv = document.getElementById('canvasDiv');
             //        canvas = document.createElement('canvas');
             //        canvas.setAttribute('width', canvasWidth);
@@ -19,8 +19,7 @@ if ( typeof(jQuery) != 'undefined' ){
             $('#canvasInAPerfectWorld').mousedown(function(e){
                 var mouseX = e.pageX - this.offsetLeft;
                 var mouseY = e.pageY - this.offsetTop;
-		
-                paint = true;
+		paint = true;
                 addClick(e.pageX - this.offsetLeft, e.pageY - this.offsetTop);
                 redraw();
             });
@@ -50,13 +49,11 @@ if ( typeof(jQuery) != 'undefined' ){
             }
             function redraw(){
                 canvas.width = canvas.width; // Clears the canvas
-  
                 context.strokeStyle = "#df4b26";
                 context.lineJoin = "round";
                 context.lineWidth = 5;
 			
-                for(var i=0; i < clickX.length; i++)
-                {		
+                for(var i=0; i < clickX.length; i++){		
                     context.beginPath();
                     if(clickDrag[i] && i){
                         context.moveTo(clickX[i-1], clickY[i-1]);
