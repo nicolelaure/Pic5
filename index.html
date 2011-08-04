@@ -9,20 +9,34 @@
         <script type="text/javascript" src="_js/global.js"></script>
     </head>
     <body>
-        <div class="left_panel">
-            <div class="players">
-                <span>Players</span>
-                <ul>
-                    <li class="active">Georgi<span class="score">10</span></li>
-                    <li>Sam<span class="score">20</span></li>
-                    <li>Nicole<span class="score">30</span></li>
-                </ul>
+        <div id="main">
+            <img src="http://t3.gstatic.com/images?q=tbn:ANd9GcQmSh-6RhFlVf-lnMG_YogS3CYKBorRElKkw6h0lr09VzCRYczOSA" />
+            <div class="sep"></div>
+            <div class="left_panel">
+                <div class="players">
+                    <h3>Players</h3>
+                    <div class="active player">
+                        <div class="name">Georgi</div>
+                        <div class="score">10</div>
+                    </div>
+                    <div class="player">
+                        <div class="name">Sam</div>
+                        <div class="score">20</div>
+                    </div>
+                    <div class="player">
+                        <div class="name">Nicole</div>
+                        <div class="score">30</div>
+                    </div>
+                </div>
             </div>
-        </div>
-        <div class="right_panel">
-            <div class="timer"></timer>
-            <canvas id="canvasInAPerfectWorld" width="500px" height="300px"></canvas>
-            <div class="canvas_clear">CLEAR</div>
+            <div class="middle_panel">
+                <div class="timer"></div>
+                <canvas id="canvasInAPerfectWorld" width="500px" height="300px"></canvas>
+                <div class="canvas_clear">CLEAR</div>
+            </div>
+            <div class="right_panel">
+                <input type="text" />
+            </div>
         </div>
     </body>
 </html>

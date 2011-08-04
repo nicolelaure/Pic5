@@ -7,14 +7,51 @@ img{
 body{
     margin:0;
     padding:0;
+    font-family:Arial;
+    font-size:12px;
+    color:#444444;
+}
+#main{
+    margin:0 auto;
+    width:980px;
+}
+img{
+    vertical-align:center;
+    margin-bottom:10px;
 }
 .left_panel{
+    float:left;
+    width:200px;
+}
+.middle_panel{
     float:left;
     width:400px;
 }
 .right_panel{
-    float:left;
+    float:right;
 }
 canvas{
     border:1px solid #000000;
+}
+.players h3{
+    font-size:16px;
+    font-weight:bold;
+    padding:0;
+    margin:5px 0;
+}
+.players{
+    width:150px;
+}
+.players .player{
+    clear:both;
+    margin-bottom:3px;
+}
+.players .name{
+    float:left;
+}
+.players .score{
+    float:right;
+}
+.player .active{
+    color:#00ff00;
 }
